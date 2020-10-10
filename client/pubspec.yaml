@@ -1,0 +1,190 @@
+name: yoldosh
+description: A carppoling / ridesharing project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0
+
+environment:
+  sdk: ">=2.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # flutter_localizations:
+    # sdk: flutter
+  # flutter_cupertino_localizations: ^1.0.1
+  # cupertino_icons: ^0.1.3
+  path_provider: 1.6.14
+  shared_preferences: 0.5.10
+  flutter_local_notifications: 1.4.4+4
+  connectivity: 0.4.9+2
+  data_connection_checker: 0.3.4
+  encrypt: 4.0.3
+  csv: 4.0.3
+  geolocator: 6.0.0+4
+  # location: 3.0.2
+  # location_permissions: 3.0.0+1
+  # fixnum: 0.10.11
+  # geodesy: 0.3.2
+  # latlong: 0.6.1
+  # geopoint: 0.7.1
+  # provider: 4.0.5
+  # flutter_bloc: 4.0.0
+  # get: 1.17.2
+  # simple_animations: 1.3.12
+  # flutter_icons: 1.1.0
+  # package_info: 0.4.0+16
+  # flutter_page_transition: 0.1.6
+  # flare_flutter: 2.0.1
+  # sticky_headers: 0.1.8+1
+  # search_widget: 1.0.2
+  # flutter_sticky_header: 0.4.2
+  # extended_nested_scroll_view: 0.4.0
+  # percent_indicator: 2.1.1+1
+  # page_transition: 1.1.5
+  # image_picker: 0.6.3+4
+  # stretchy_header: 1.0.7
+  # sliding_up_panel: 1.0.0
+  # palette_generator: 0.2.2
+  # solid_bottom_sheet: 0.1.9
+  # line_icons: ^0.2.0
+  # outline_material_icons: 0.1.1
+  # multicast_dns: 0.2.1
+  # flutter_svg: 0.14.1
+  # wave: 0.0.8
+  # android_alarm_manager: 0.4.4
+  # sqflite: 1.1.6+3
+  # location: 2.3.5
+  # downloads_path_provider: 0.1.0
+  # latlong: 0.6.1
+  # android_intent: 0.3.2
+  # flutter_background_geolocation: 1.0.12
+  # geofencing: 0.0.1
+  # frideos: 0.7.0+1
+  # flutter_multiselect: 0.3.0
+  # keyboard_avoider: 0.1.2
+  # flutter_bloc: 0.20.0
+  # bloc: 0.14.4
+  # fish_redux: 0.2.4
+  # floating_search_bar: 0.2.0
+  # diff_match_patch: ^0.3.0
+  # material_search: ^0.2.8
+  # flushbar: ^1.0.1
+  # flutter_list_drag_and_drop: ^0.1.5
+  # flutter_speed_dial: ^1.0.8
+  georouter:
+    path: ./plugins/georouter
+
+# dev_dependencies:
+  # flutter_test:
+    # sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/logo.png
+    # - assets/db/
+    - assets/db/tashkent_region-gh/
+    - assets/db/tashkent_region-places.csv
+    - assets/db/favorite-places.csv
+
+
+  fonts:
+
+  # - family: Cantarell
+    # fonts:
+    # - asset: assets/fonts/Cantarell-Regular.ttf
+      # weight: 300
+    # - asset: assets/fonts/Cantarell-Bold.ttf
+      # weight: 400
+
+  # - family: Jost
+    # fonts:
+    # - asset: assets/fonts/Jost-Light.ttf
+    # - asset: assets/fonts/Jost-Regular.ttf
+    # - asset: assets/fonts/Jost-Medium.ttf
+    # - asset: assets/fonts/Jost-SemiBold.ttf
+    # - asset: assets/fonts/Jost-Bold.ttf
+    # - asset: assets/fonts/Jost-ExtraBold.ttf
+
+  # - family: FuturaNew
+    # fonts:
+    # - asset: assets/fonts/FuturaNewBook-Reg.ttf
+    # - asset: assets/fonts/FuturaNewLight-Reg.ttf
+    # - asset: assets/fonts/FuturaNewDemi-Reg.ttf
+    # - asset: assets/fonts/FuturaNewMedium-Reg.ttf
+    # - asset: assets/fonts/FuturaNewBold-Reg.ttf
+    # - asset: assets/fonts/FuturaNewExtrabold-Reg.ttf
+    # - asset: assets/fonts/FuturaNewHeavy-Reg.ttf
+
+  # - family: CustomIcons
+    # fonts:
+    # - asset: assets/icons/CustomIcons.ttf
+
+  - family: Rubik
+    fonts:
+    - asset: assets/fonts/Rubik-Light.ttf
+      weight: 300
+    - asset: assets/fonts/Rubik-Regular.ttf
+      weight: 400
+    - asset: assets/fonts/Rubik-Medium.ttf
+      weight: 600
+    - asset: assets/fonts/Rubik-Bold.ttf
+      weight: 700
+
+  # - family: Manrope
+    # fonts:
+    # - asset: assets/fonts/Manrope-Light.ttf
+      # weight: 300
+    # - asset: assets/fonts/Manrope-Regular.ttf
+      # weight: 400
+    # - asset: assets/fonts/Manrope-Medium.ttf
+      # weight: 500
+    # - asset: assets/fonts/Manrope-SemiBold.ttf
+      # weight: 600
+    # - asset: assets/fonts/Manrope-Bold.ttf
+      # weight: 700
+    # - asset: assets/fonts/Manrope-ExtraBold.ttf
+      # weight: 800
+
+  # - family: FuturaNew
+    # fonts:
+    # - asset: assets/fonts/FuturaNew-Book.ttf
+      # weight: 300
+    # - asset: assets/fonts/FuturaNew-Medium.ttf
+      # weight: 400
+    # - asset: assets/fonts/FuturaNew-Demi.ttf
+      # weight: 500
+    # - asset: assets/fonts/FuturaNew-Bold.ttf
+      # weight: 600
+
+  # - family: MuseoSans
+    # fonts:
+    # - asset: assets/fonts/MuseoSansCyrl-300.ttf
+      # weight: 300
+    # - asset: assets/fonts/MuseoSansCyrl-500.ttf
+      # weight: 500
+    # - asset: assets/fonts/MuseoSansCyrl-700.ttf
+      # weight: 700
+    # - asset: assets/fonts/MuseoSansCyrl-900.ttf
+      # weight: 900
+
+
+    # For display
+
+  # - family: Prompt
+    # fonts:
+    # - asset: assets/fonts/Prompt-SemiBold.ttf
+      # weight: 600
